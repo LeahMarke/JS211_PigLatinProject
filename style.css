@@ -77,28 +77,81 @@ select {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("pig_image.png");
+  background-image: url("pig-snout-drawing.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #text_box {
-  width: 45%;
-  height: 45%;
-  border-radius: 25%;
+  width: 80%;
+  height: 55%;
+  border-radius: 5%;
   background-color: rgba(127, 255, 212, 0.565);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin: auto;
-  margin-top: 12em;
+  margin-top: 1em;
+  position: relative;
+  top: 550px;
 }
 h1 {
-  background-color: rgba(227, 162, 82, 0.879);
-  border-radius: 25%;
-  padding: 1em 1em;
+  font-size: 4.5em;
+  width: 90%;
+  background-color: #f48dcbdd;
+  border-radius: 5%;
+  padding: 0.5em 1em;
+  text-align: center;
+  margin-top: 26px;
+}
+#user-input {
+  font-size: 3.5em;
+  padding: 0 1em;
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+  border: 5px solid #f48dcbdd;
+}
+button {
+  font-size: 4em;
+  padding: 0 1em;
+  margin-top: 20px;
+  border: 5px solid #f48dcbdd;
 }
 p {
-  background-color: red;
+  margin-top: 20px;
+  font-size: 4em;
+  text-align: center;
 }
+
+@media (min-width: 1200px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pig_image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #text_box {
+    width: 45%;
+    height: 45%;
+    border-radius: 25%;
+    background-color: rgba(127, 255, 212, 0.565);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 12em;
+  }
+  h1 {
+    background-color: rgba(227, 162, 82, 0.879);
+    border-radius: 25%;
+    padding: 1em 1em;
+  }
+  p {
+    background-color: red;
+  }
+} ;

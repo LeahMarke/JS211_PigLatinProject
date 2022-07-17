@@ -43,4 +43,4 @@ const sentencePigLatin = (sentence) => {
   // return newPigString;
   return newPigSentence;
 };
-sentencePigLatin("Hey there sweetie");
+sentencePigLatin("sweetie");
