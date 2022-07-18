@@ -77,6 +77,14 @@ select {
 body {
   width: 100vw;
   height: 100vh;
+  /* background-image: url("pig-snout-drawing.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+main {
+  height: 90%;
+  width: 100%;
   background-image: url("pig-snout-drawing.png");
   background-position: center;
   background-size: cover;
@@ -84,9 +92,9 @@ body {
 }
 #text_box {
   width: 80%;
-  height: 55%;
+  height: 52%;
   border-radius: 5%;
-  background-color: rgba(127, 255, 212, 0.565);
+  background-color: rgb(127, 255, 212);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -94,7 +102,7 @@ body {
   margin: auto;
   margin-top: 1em;
   position: relative;
-  top: 550px;
+  top: 500px;
 }
 h1 {
   font-size: 4.5em;
@@ -124,7 +132,11 @@ p {
   font-size: 4em;
   text-align: center;
 }
-
+@media (min-width: 576px) {
+  /* #text_box {
+    margin-top: 0;
+  } */
+}
 @media (min-width: 1200px) {
   body {
     width: 100vw;
@@ -138,7 +150,7 @@ p {
     width: 45%;
     height: 45%;
     border-radius: 25%;
-    background-color: rgba(127, 255, 212, 0.565);
+    background-color: rgb(127, 255, 212);
     display: flex;
     flex-direction: column;
     justify-content: center;
